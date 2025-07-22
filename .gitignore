@@ -1,0 +1,33 @@
+# .gitignore for Terraform
+
+# Local Terraform directories
+.terraform/
+
+# Local state files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files to prevent committing sensitive variables.
+# If you need to share variable names, use a terraform.tfvars.example file.
+*.tfvars
+*.tfvars.json
+
+# Exclude override files as they are meant to be used locally
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Exclude plan files
+*.tfplan
+
+# Terraform CLI configuration files
+.terraformrc
+terraform.rc
+
+# Terraform Cloud/Enterprise credentials
+.terraform.d/credentials.tfrc.json
