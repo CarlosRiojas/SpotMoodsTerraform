@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # .gitignore for Terraform
 
 # Local Terraform directories
@@ -6,22 +7,43 @@
 # Local state files
 terraform.tfstate
 terraform.tfstate.backup
+=======
+# Local .terraform directories
+.terraform/
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+>>>>>>> ff2048079425e06f8a061094ba8389ef43853fc8
 
 # Crash log files
 crash.log
 crash.*.log
 
+<<<<<<< HEAD
 # Exclude all .tfvars files to prevent committing sensitive variables.
 # If you need to share variable names, use a terraform.tfvars.example file.
 *.tfvars
 *.tfvars.json
 
 # Exclude override files as they are meant to be used locally
+=======
+# Exclude all .tfvars files, which are likely to contain sensitive data, such as
+# password, private keys, and other secrets. These should not be part of version 
+# control as they are data points which are potentially sensitive and subject 
+# to change depending on the environment.
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+>>>>>>> ff2048079425e06f8a061094ba8389ef43853fc8
 override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
 
+<<<<<<< HEAD
 # Exclude plan files
 *.tfplan
 
@@ -31,3 +53,17 @@ terraform.rc
 
 # Terraform Cloud/Enterprise credentials
 .terraform.d/credentials.tfrc.json
+=======
+# Ignore transient lock info files created by terraform apply
+.terraform.tfstate.lock.info
+
+# Include override files you do wish to add to version control using negated pattern
+# !example_override.tf
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+>>>>>>> ff2048079425e06f8a061094ba8389ef43853fc8
