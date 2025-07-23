@@ -1,6 +1,6 @@
 output "website_url" {
   description = "The URL of the deployed static website."
-  value       = "https://${module.static_website.custom_domain_name}"
+  value       = "https://${module.static_website.cdn_endpoint_hostname}"
 }
 
 output "cdn_endpoint_hostname" {
